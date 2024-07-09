@@ -14,7 +14,7 @@ class Ros2BagRecorder:
         self.process = subprocess.Popen(command)
         print(f"Started recording to bag: {self.bag_name}")
    
-    #  >>>>>>>>>>>>>>for selected topics 
+    #  >>>>>>>>>>>>>>for selected topics uncomment two function
         
     # def __init__(self, bag_name_prefix, topics):
     #     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     bag_name = 'bunker_bag'
     topics = ['/tree_info', '/rosout']
 
-    # recorder = Ros2BagRecorder(bag_name, topics)
+    # recorder = Ros2BagRecorder(bag_name, topics)    #for selected topics
     
     recorder = Ros2BagRecorder(bag_name)
 
