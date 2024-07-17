@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'record_ros2_bag = record_bag:main'
+            'record_selected = record_bag.selected:main'
         ],
     },
 )
